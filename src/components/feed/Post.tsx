@@ -24,7 +24,7 @@ const Post: React.FC<PostProps> = ({ username, imageUrl, likes }) => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="h-max flex flex-col items-center justify-center">
       <div className="flex-grow bg-black border border-gray-300 w-[40%] my-5 rounded-lg shadow-md h-max ">
         {/* Imagen del post */}
         <div className="flex items-center gap-4">
@@ -39,11 +39,11 @@ const Post: React.FC<PostProps> = ({ username, imageUrl, likes }) => {
           height={1200}
           className="w-full"
         />
-        {/* Interacción */}
+
         <div className="p-4 bg-black flex flex-col justify-between flex-grow text-white">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2"></div>
-            {/* Iconos de interacción */}
+
             <div className="flex space-x-4">
               <div
                 className={`cursor-pointer text-2xl ${
@@ -62,7 +62,7 @@ const Post: React.FC<PostProps> = ({ username, imageUrl, likes }) => {
             </div>
           </div>
 
-          {/* Contador de likes */}
+
           <div className="mb-2">
             <span className="font-semibold">{likeCount} likes</span>
           </div>
